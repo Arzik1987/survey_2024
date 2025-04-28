@@ -1,0 +1,7 @@
+---
+title: "Geography"
+---
+
+View the interactive map of responses below:
+
+<iframe src="survey_2024_success.html" width="100%" height="600px"></iframe>

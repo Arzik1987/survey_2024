@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: methodology.qmd
+        text: Methodology
+      - href: results.qmd
+        text: Results
+      - href: map.qmd
+        text: Map
+      - href: code.qmd
+        text: Code
+  page-footer:
+    left: "© 2025 NIKA Verein. All rights reserved."
+    right: "[GitHub Repo](https://github.com/your-repo)"
+format:
+  html:
+    theme: default
+    toc: true  # Adds a table of contents
+
+
+

@@ -1,0 +1,26 @@
+---
+title: "Results"
+format: 
+  html:
+    code-fold: true  # Users can toggle code (optional)
+    code-tools: true # Removes code visibility buttons
+    code-line-numbers: false
+execute:
+  echo: true  # Hides all code
+  warning: false  # Hides warnings
+  message: false  # Hides extra messages
+jupyter: python3
+---
+
+This is an example of text
+
+```{python}
+import numpy as np
+np.mean([1,2,3])
+```
+
+```{python}
+import numpy as np
+np.mean([1,2,3,4])
+```
+
