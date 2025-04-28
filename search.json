@@ -4,7 +4,7 @@
     "href": "results.html",
     "title": "Results",
     "section": "",
-    "text": "This is an example of text\n\n\nCode\nimport numpy as np\nnp.mean([1,2,3])\n\n\n2.0\n\n\n\n\nCode\nimport numpy as np\nnp.mean([1,2,3,4])\n\n\n2.5"
+    "text": "This is an example of text"
   },
   {
     "objectID": "map.html",
