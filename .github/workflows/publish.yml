@@ -19,6 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: quarto-dev/quarto-actions@v2.0.1
+      - uses: quarto-dev/quarto-actions/publish@v2
         with:
           command: publish
