@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "Results",
+    "section": "",
+    "text": "This is an example of text\n\n\nCode\nimport numpy as np\nnp.mean([1,2,3])\n\n\n2.0\n\n\n\n\nCode\nimport numpy as np\nnp.mean([1,2,3,4])\n\n\n2.5"
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Geography",
+    "section": "",
+    "text": "View the interactive map of responses below:"
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code",
+    "section": "",
+    "text": "References to the code for the bot and postprocessing"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Survey of Ukrainian Refugees in Germany",
+    "section": "",
+    "text": "Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram in over 100 volunteer-led channels.\n#TODO motivation should go here\nThe core team consists of four members:\n\nFelix:\n\nVadim:\n\nAnna:\n\nAnna:\n\nHowever, this project would not have been possible without the active cooperation of volunteer chat administrators who participated in the survey.\nExplore the findings:\n\n📖 Methodology\n📊 Results\n🌍 Geography\n🛠 Code"
+  },
+  {
+    "objectID": "methodology.html",
+    "href": "methodology.html",
+    "title": "📝 Methodology",
+    "section": "",
+    "text": "This page explains the methodology behind our opinion poll, outlining the key phases of the project, from preparation to data processing and visualization. Unlike conventional polls, our methodology is more prone to biases—particularly coverage and nonresponse biases—which are difficult to quantify precisely. However, we will discuss their potential impact later on this page."
+  },
+  {
+    "objectID": "methodology.html#preparation-phase",
+    "href": "methodology.html#preparation-phase",
+    "title": "📝 Methodology",
+    "section": "📌 1. Preparation phase",
+    "text": "📌 1. Preparation phase\nBefore launching the survey, we conducted an extensive research and design phase.\n\nResearch on existing surveys\nWe reviewed past surveys and studies on Ukrainian refugees, particularly those related to Germany, to identify their intersection with our intended questionnaire. Our goal was to align demographic questions, such as age categories, with those used in other surveys to facilitate easier comparisons.\n\n\nSelecting the opinion poll format\nOur primary focus as a group of volunteers was to explore the potential impact of our efforts. Given the small size of our core team, choosing Telegram channels dedicated to assisting Ukrainian refugees was a natural decision.\nTo maximize participation, we kept the poll simple and anonymous. Simplicity ensured that participants could respond directly within the Telegram channels they were already part of, rather than through a separate bot-led channel or external forms (e.g., Google Forms). Anonymity allowed those who preferred to keep their privacy to participate freely.\nTo achieve this, we used anonymous multi- and single-choice Telegram polls.\n\n\nDevelopment of a Telegram Chat-Bot\nTo automate data collection, we developed a custom Telegram bot that allowed to create : - Recorded every anonymous poll response. - Logged timestamps to later connect responses across multiple polls. - Stored data securely for post-processing.\n\n\nTesting the bot in pilot groups\nBefore launching at scale, we: - Tested the bot in several Telegram groups to ensure proper data capture. - Refined timestamp synchronization to allow for multi-poll analysis. - Validated that anonymity was preserved while collecting meaningful insights."
+  },
+  {
+    "objectID": "methodology.html#organizational-phase",
+    "href": "methodology.html#organizational-phase",
+    "title": "📝 Methodology",
+    "section": "🛠 2. Organizational Phase",
+    "text": "🛠 2. Organizational Phase\nTo reach as many Ukrainian refugees as possible, we worked with volunteer Telegram channels.\n\nCollaboration with Chat Administrators\n\nWe identified 100+ active Telegram groups where refugees communicated.\nContacted group admins to obtain permission for posting survey polls.\nEnsured that the survey was pinned or highlighted for better visibility.\n\n\n\nSurvey Deployment Strategy\n\nInstead of a single poll, we used a sequence of polls to cover different aspects (e.g., demographics, employment, housing).\nPolls were posted at optimal times to maximize engagement.\nThe chat-bot collected timestamps for every vote, allowing us to later link responses across multiple polls."
+  },
+  {
+    "objectID": "methodology.html#innovative-solutions",
+    "href": "methodology.html#innovative-solutions",
+    "title": "📝 Methodology",
+    "section": "💡 3. Innovative Solutions",
+    "text": "💡 3. Innovative Solutions\nOne of the key innovations in our survey was the ability to link responses across multiple anonymous polls in a single channel.\n\nTimestamp-Based Poll Linking\n\nTelegram anonymous polls do not track user identities.\nBy logging timestamps for each vote, we could reconstruct response patterns across different questions.\nThis method preserved anonymity while allowing us to analyze correlations between responses.\n\n\n\nData Validation & Quality Control\nTo ensure data quality, we: - Filtered out duplicate votes (if a user tried to vote multiple times in the same poll). - Identified suspicious response patterns (e.g., sudden surges of votes in specific cities). - Compared data with external refugee statistics for consistency."
+  },
+  {
+    "objectID": "methodology.html#data-processing-visualization",
+    "href": "methodology.html#data-processing-visualization",
+    "title": "📝 Methodology",
+    "section": "📊 4. Data Processing & Visualization",
+    "text": "📊 4. Data Processing & Visualization\nOnce the survey responses were collected, we processed and visualized the data using Python.\n\nData Cleaning & Organization\n\nPandas was used for handling and cleaning the dataset.\nRemoved incomplete or inconsistent responses.\nMerged different poll responses using timestamp synchronization.\n\n\n\nStatistical Analysis & Graphs\n\nMatplotlib and Seaborn were used for visualizing response distributions.\nFolium (Leaflet.js) was used to create an interactive refugee response map.\n\n\n\nInteractive Mapping\n\nWe mapped responses by city to show geographical trends.\nUsers can click on cities to view Telegram group links and survey insights."
+  },
+  {
+    "objectID": "methodology.html#ethical-considerations-anonymity",
+    "href": "methodology.html#ethical-considerations-anonymity",
+    "title": "📝 Methodology",
+    "section": "📜 5. Ethical Considerations & Anonymity",
+    "text": "📜 5. Ethical Considerations & Anonymity\nGiven the sensitivity of refugee data, we adhered to strict ethical guidelines.\n\nAnonymity Measures\n\nNo personally identifiable information (PII) was collected.\nTimestamp-based response linking was done without exposing individual identities.\nAll data was stored securely and only used for research purposes.\n\n\n\nTransparency & Open-Source Approach\n\nThe survey methodology and analysis code are publicly available.\nWe encourage researchers to review our code and replicate the study."
+  },
+  {
+    "objectID": "methodology.html#next-steps",
+    "href": "methodology.html#next-steps",
+    "title": "📝 Methodology",
+    "section": "📎 Next Steps",
+    "text": "📎 Next Steps\n\n📊 View Survey Results\n🌍 Explore the Survey Geography\n🛠 Check the Code"
+  }
+]
