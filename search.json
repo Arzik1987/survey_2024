@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "results.html",
-    "href": "results.html",
-    "title": "Results",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Survey of Ukrainian Refugees in Germany",
     "section": "",
-    "text": "This is an example of text"
-  },
-  {
-    "objectID": "map.html",
-    "href": "map.html",
-    "title": "Geography",
-    "section": "",
-    "text": "View the interactive map of responses below:"
+    "text": "Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram in over 100 volunteer-led channels.\n#TODO motivation should go here\nThe core team consists of four members:\n\nFelix:\n\nVadim:\n\nAnna:\n\nAnna:\n\nHowever, this project would not have been possible without the active cooperation of volunteer chat administrators who participated in the survey.\nExplore the findings:\n\n📖 Methodology\n📊 Results\n🌍 Geography\n🛠 Code"
   },
   {
     "objectID": "code.html",
@@ -21,11 +14,18 @@
     "text": "References to the code for the bot and postprocessing"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Survey of Ukrainian Refugees in Germany",
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Geography",
     "section": "",
-    "text": "Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram in over 100 volunteer-led channels.\n#TODO motivation should go here\nThe core team consists of four members:\n\nFelix:\n\nVadim:\n\nAnna:\n\nAnna:\n\nHowever, this project would not have been possible without the active cooperation of volunteer chat administrators who participated in the survey.\nExplore the findings:\n\n📖 Methodology\n📊 Results\n🌍 Geography\n🛠 Code"
+    "text": "View the interactive map of responses below:"
+  },
+  {
+    "objectID": "results.html",
+    "href": "results.html",
+    "title": "Results",
+    "section": "",
+    "text": "This is an example of text"
   },
   {
     "objectID": "methodology.html",
