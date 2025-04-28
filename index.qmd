@@ -1,0 +1,28 @@
+---
+title: "Survey of Ukrainian Refugees in Germany"
+author: "NIKA Verein"
+date: today
+---
+
+Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram in over 100 volunteer-led channels.
+
+#TODO motivation should go here
+
+The core team consists of four members:
+
+- **Felix:**  
+- **Vadim:**  
+- **Anna:**  
+- **Anna:**  
+
+However, this project would not have been possible without the active cooperation of volunteer chat administrators who participated in the survey.
+
+Explore the findings:
+
+- 📖 [Methodology](methodology.qmd)
+
+- 📊 [Results](results.qmd)
+
+- 🌍 [Geography](map.qmd)
+
+- 🛠 [Code](code.qmd)
