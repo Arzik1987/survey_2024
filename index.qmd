@@ -1,28 +1,27 @@
 ---
 title: "Survey of Ukrainian Refugees in Germany"
-author: "NIKA Verein"
-date: today
+# author: "NIKA Verein"
+date-modified: today
 ---
 
-Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram in over 100 volunteer-led channels.
+Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram across over 100 volunteer-led channels throughout Germany. The goal was to understand the needs of refugees, track how these needs evolve over time, and connect them to demographic characteristics. This understanding can help tailor volunteer activities to actual needs.
 
-#TODO motivation should go here
+This report explains our methodology, including the main innovation: the use of a custom Telegram bot to automate the consolidation of poll results and the matching of response times, enabling us to combine answers from different polls (e.g., the "problems" and "demographics" polls) while preserving respondent anonymity. We also share key parts of the code, allowing others to run similar surveys. We chose not to make the raw data public, as it could be misused in manipulative analyses.
 
-The core team consists of four members:
-
-- **Felix:**  
-- **Vadim:**  
-- **Anna:**  
-- **Anna:**  
-
-However, this project would not have been possible without the active cooperation of volunteer chat administrators who participated in the survey.
-
-Explore the findings:
-
-- 📖 [Methodology](methodology.qmd)
+- 📖 [Methodology of the survey](methodology.qmd)
 
 - 📊 [Results](results.qmd)
 
-- 🌍 [Geography](map.qmd)
+- 🌍 [Survey geography](map.qmd)
 
 - 🛠 [Code](code.qmd)
+
+
+The core team consists of four members (listed alphabetically):
+
+- Anna
+- Anna
+- Felix
+- Vadim
+
+However, this project would not have been possible without the active cooperation of the volunteer chat administrators who supported the survey.
