@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Survey of Ukrainian Refugees in Germany",
-    "section": "",
-    "text": "Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram in over 100 volunteer-led channels.\n#TODO motivation should go here\nThe core team consists of four members:\n\nFelix:\n\nVadim:\n\nAnna:\n\nAnna:\n\nHowever, this project would not have been possible without the active cooperation of volunteer chat administrators who participated in the survey.\nExplore the findings:\n\n📖 Methodology\n📊 Results\n🌍 Geography\n🛠 Code"
-  },
-  {
-    "objectID": "code.html",
-    "href": "code.html",
-    "title": "Code",
-    "section": "",
-    "text": "References to the code for the bot and postprocessing"
-  },
-  {
-    "objectID": "map.html",
-    "href": "map.html",
-    "title": "Geography",
-    "section": "",
-    "text": "View the interactive map of responses below:"
-  },
-  {
     "objectID": "results.html",
     "href": "results.html",
     "title": "Results",
@@ -75,5 +54,26 @@
     "title": "📝 Methodology",
     "section": "📎 Next Steps",
     "text": "📎 Next Steps\n\n📊 View Survey Results\n🌍 Explore the Survey Geography\n🛠 Check the Code"
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code",
+    "section": "",
+    "text": "References to the code for the bot and postprocessing"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Survey of Ukrainian Refugees in Germany",
+    "section": "",
+    "text": "Welcome to the official survey report on Ukrainian refugees in Germany. This study was conducted via Telegram across over 100 volunteer-led channels throughout Germany. The goal was to understand the needs of refugees, track how these needs evolve over time, and connect them to demographic characteristics. This understanding can help tailor volunteer activities to actual needs.\nThis report explains our methodology, including the main innovation: the use of a custom Telegram bot to automate the consolidation of poll results and the matching of response times, enabling us to combine answers from different polls (e.g., the “problems” and “demographics” polls) while preserving respondent anonymity. We also share key parts of the code, allowing others to run similar surveys. We chose not to make the raw data public, as it could be misused in manipulative analyses.\n\n📖 Methodology of the survey\n📊 Results\n🌍 Survey geography\n🛠 Code\n\nThe core team consists of four members (listed alphabetically):\n\nAnna\nAnna\nFelix\nVadim\n\nHowever, this project would not have been possible without the active cooperation of the volunteer chat administrators who supported the survey."
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Geography",
+    "section": "",
+    "text": "View the interactive map of responses below:"
   }
 ]
