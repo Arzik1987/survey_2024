@@ -119,35 +119,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#preparation-phase" id="toc-preparation-phase" class="nav-link active" data-scroll-target="#preparation-phase">📌 1. Preparation phase</a>
-  <ul class="collapse">
-  <li><a href="#research-on-existing-surveys" id="toc-research-on-existing-surveys" class="nav-link" data-scroll-target="#research-on-existing-surveys">Research on existing surveys</a></li>
-  <li><a href="#selecting-the-opinion-poll-format" id="toc-selecting-the-opinion-poll-format" class="nav-link" data-scroll-target="#selecting-the-opinion-poll-format">Selecting the opinion poll format</a></li>
-  <li><a href="#development-of-a-telegram-chat-bot" id="toc-development-of-a-telegram-chat-bot" class="nav-link" data-scroll-target="#development-of-a-telegram-chat-bot">Development of a Telegram Chat-Bot</a></li>
-  <li><a href="#testing-the-bot-in-pilot-groups" id="toc-testing-the-bot-in-pilot-groups" class="nav-link" data-scroll-target="#testing-the-bot-in-pilot-groups">Testing the bot in pilot groups</a></li>
-  </ul></li>
-  <li><a href="#organizational-phase" id="toc-organizational-phase" class="nav-link" data-scroll-target="#organizational-phase">🛠 2. Organizational Phase</a>
-  <ul class="collapse">
-  <li><a href="#collaboration-with-chat-administrators" id="toc-collaboration-with-chat-administrators" class="nav-link" data-scroll-target="#collaboration-with-chat-administrators">Collaboration with Chat Administrators</a></li>
-  <li><a href="#survey-deployment-strategy" id="toc-survey-deployment-strategy" class="nav-link" data-scroll-target="#survey-deployment-strategy">Survey Deployment Strategy</a></li>
-  </ul></li>
-  <li><a href="#innovative-solutions" id="toc-innovative-solutions" class="nav-link" data-scroll-target="#innovative-solutions">💡 3. Innovative Solutions</a>
-  <ul class="collapse">
-  <li><a href="#timestamp-based-poll-linking" id="toc-timestamp-based-poll-linking" class="nav-link" data-scroll-target="#timestamp-based-poll-linking">Timestamp-Based Poll Linking</a></li>
-  <li><a href="#data-validation-quality-control" id="toc-data-validation-quality-control" class="nav-link" data-scroll-target="#data-validation-quality-control">Data Validation &amp; Quality Control</a></li>
-  </ul></li>
-  <li><a href="#data-processing-visualization" id="toc-data-processing-visualization" class="nav-link" data-scroll-target="#data-processing-visualization">📊 4. Data Processing &amp; Visualization</a>
-  <ul class="collapse">
-  <li><a href="#data-cleaning-organization" id="toc-data-cleaning-organization" class="nav-link" data-scroll-target="#data-cleaning-organization">Data Cleaning &amp; Organization</a></li>
-  <li><a href="#statistical-analysis-graphs" id="toc-statistical-analysis-graphs" class="nav-link" data-scroll-target="#statistical-analysis-graphs">Statistical Analysis &amp; Graphs</a></li>
-  <li><a href="#interactive-mapping" id="toc-interactive-mapping" class="nav-link" data-scroll-target="#interactive-mapping">Interactive Mapping</a></li>
-  </ul></li>
-  <li><a href="#ethical-considerations-anonymity" id="toc-ethical-considerations-anonymity" class="nav-link" data-scroll-target="#ethical-considerations-anonymity">📜 5. Ethical Considerations &amp; Anonymity</a>
-  <ul class="collapse">
-  <li><a href="#anonymity-measures" id="toc-anonymity-measures" class="nav-link" data-scroll-target="#anonymity-measures">Anonymity Measures</a></li>
-  <li><a href="#transparency-open-source-approach" id="toc-transparency-open-source-approach" class="nav-link" data-scroll-target="#transparency-open-source-approach">Transparency &amp; Open-Source Approach</a></li>
-  </ul></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">📎 Next Steps</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">📌 1. Preparation</a></li>
+  <li><a href="#organizational-phase" id="toc-organizational-phase" class="nav-link" data-scroll-target="#organizational-phase">🔄 2. Organizational Phase</a></li>
   </ul>
 </nav>
     </div>
@@ -173,123 +146,117 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page explains the methodology behind our opinion poll, outlining the key phases of the project, from preparation to data processing and visualization. Unlike conventional polls, our methodology is more prone to biases—particularly <strong>coverage</strong> and <strong>nonresponse biases</strong>—which are difficult to quantify precisely. However, we will discuss their potential impact later on this page.</p>
-<hr>
-<section id="preparation-phase" class="level2">
-<h2 class="anchored" data-anchor-id="preparation-phase">📌 1. Preparation phase</h2>
-<p>Before launching the survey, we conducted an extensive research and design phase.</p>
-<section id="research-on-existing-surveys" class="level3">
-<h3 class="anchored" data-anchor-id="research-on-existing-surveys">Research on existing surveys</h3>
-<p>We reviewed past surveys and studies on Ukrainian refugees, particularly those related to Germany, to identify their intersection with our intended questionnaire. Our goal was to align demographic questions, such as age categories, with those used in other surveys to facilitate easier comparisons.</p>
-</section>
-<section id="selecting-the-opinion-poll-format" class="level3">
-<h3 class="anchored" data-anchor-id="selecting-the-opinion-poll-format">Selecting the opinion poll format</h3>
-<p>Our primary focus as a group of volunteers was to explore the potential impact of our efforts. Given the small size of our core team, choosing Telegram channels dedicated to assisting Ukrainian refugees was a natural decision.</p>
-<p>To maximize participation, we kept the poll <strong>simple</strong> and <strong>anonymous</strong>. Simplicity ensured that participants could respond directly within the Telegram channels they were already part of, rather than through a separate bot-led channel or external forms (e.g., Google Forms). Anonymity allowed those who preferred to keep their privacy to participate freely.</p>
-<p>To achieve this, we used <strong>anonymous multi- and single-choice Telegram polls</strong>.</p>
-</section>
-<section id="development-of-a-telegram-chat-bot" class="level3">
-<h3 class="anchored" data-anchor-id="development-of-a-telegram-chat-bot">Development of a Telegram Chat-Bot</h3>
-<p>To automate data collection, we developed a custom Telegram bot that allowed to create : - Recorded every <strong>anonymous poll response</strong>. - Logged <strong>timestamps</strong> to later connect responses across multiple polls. - Stored data securely for post-processing.</p>
-</section>
-<section id="testing-the-bot-in-pilot-groups" class="level3">
-<h3 class="anchored" data-anchor-id="testing-the-bot-in-pilot-groups">Testing the bot in pilot groups</h3>
-<p>Before launching at scale, we: - Tested the bot in <strong>several Telegram groups</strong> to ensure proper data capture. - Refined timestamp synchronization to allow for <strong>multi-poll analysis</strong>. - Validated that anonymity was preserved while collecting meaningful insights.</p>
-<hr>
-</section>
-</section>
-<section id="organizational-phase" class="level2">
-<h2 class="anchored" data-anchor-id="organizational-phase">🛠 2. Organizational Phase</h2>
-<p>To reach as many Ukrainian refugees as possible, we worked with <strong>volunteer Telegram channels</strong>.</p>
-<section id="collaboration-with-chat-administrators" class="level3">
-<h3 class="anchored" data-anchor-id="collaboration-with-chat-administrators">Collaboration with Chat Administrators</h3>
+<p>This page explains the methodology behind our opinion poll, outlining the key phases of the project—from preparation to data processing and visualization.<br>
+Unlike conventional polls, our methodology may have <a href="https://en.wikipedia.org/wiki/Opinion_poll#Coverage_bias"><strong>coverage bias</strong></a> and <a href="https://en.wikipedia.org/wiki/Participation_bias"><strong>nonresponse bias</strong></a>, which are difficult to quantify precisely. Although our results, where comparable, match those from official agencies quite well, extrapolating them to the overall population is at your own risk of erroneous conclusions.</p>
+<section id="preparation" class="level3">
+<h3 class="anchored" data-anchor-id="preparation">📌 1. Preparation</h3>
+<p>At the preparation step we have analyzed the existing surveys of similar kind, decided on survey format, developed the bot which automatically collects the current results each time a new vote appears, and tested our ideas with a small scope sureveys.</p>
+<p><strong>Research on existing surveys</strong>. We reviewed past surveys on Ukrainian refugees, particularly those related to Germany, to identify their intersection with our intended questionnaire. Our goal was to align demographic questions, such as age categories, with those used in other surveys to facilitate easier comparisons.</p>
+<p><strong>Selecting the opinion poll format</strong>. Our primary focus was to explore the potential impact of our efforts. Given the small size of our core team, choosing Telegram channels dedicated to assisting Ukrainian refugees was a natural decision.</p>
+<p>To maximize participation, we kept the poll <em>simple</em> and <em>anonymous</em>. Simplicity ensured that participants could respond directly within the Telegram channels they were already part of, rather than through a separate bot-led channel or external forms (e.g., Google Forms). Anonymity allowed those who preferred to keep their privacy to participate freely.</p>
+<p>To achieve this, we used anonymous multi- and single-choice Telegram polls. Telegram allows maximum 10 choice options per poll. We ended up with the following three polls to maximally use this limit and to not owerwhelm responers with the number of polls.</p>
+<ol type="1">
+<li><p>Multiple choice poll: What problems related to moving and adapting to life in Germany are currently most important to you?</p>
+<form>
+<p><label><input type="checkbox" name="main_issues"> Learning German</label><br> <label><input type="checkbox" name="main_issues"> Employment</label><br> <label><input type="checkbox" name="main_issues"> Bureaucratic procedures</label><br> <label><input type="checkbox" name="main_issues"> Professional education, retraining</label><br> <label><input type="checkbox" name="main_issues"> Housing, household setup</label><br> <label><input type="checkbox" name="main_issues"> Medicine</label><br> <label><input type="checkbox" name="main_issues"> Psychological problems</label><br> <label><input type="checkbox" name="main_issues"> Loneliness</label><br> <label><input type="checkbox" name="main_issues"> Adaptation and integration of children</label><br> <label><input type="checkbox" name="main_issues"> Other options (including no critical problems related to moving to Germany)</label><br></p>
+</form>
+<p>
+</p></li>
+<li><p>Single choice poll.</p>
+<form>
+<p><label><input type="radio" name="gender_age"> I am a woman, aged 18 to 29</label><br> <label><input type="radio" name="gender_age"> I am a woman, aged 30 to 39</label><br> <label><input type="radio" name="gender_age"> I am a woman, aged 40 to 49</label><br> <label><input type="radio" name="gender_age"> I am a woman, aged 50 to 59</label><br> <label><input type="radio" name="gender_age"> I am a woman, older than 60</label><br> <label><input type="radio" name="gender_age"> I am a man, aged 18 to 29</label><br> <label><input type="radio" name="gender_age"> I am a man, aged 30 to 39</label><br> <label><input type="radio" name="gender_age"> I am a man, aged 40 to 49</label><br> <label><input type="radio" name="gender_age"> I am a man, aged 50 to 59</label><br> <label><input type="radio" name="gender_age"> I am a man, older than 60</label><br></p>
+</form>
+<p>
+</p></li>
+<li><p>Single choice poll: How long have you been staying in Germany?</p>
+<form>
+<p><label><input type="radio" name="duration"> Less than half a year</label><br> <label><input type="radio" name="duration"> Less than 1 year</label><br> <label><input type="radio" name="duration"> Less than 1.5 years</label><br> <label><input type="radio" name="duration"> Less than 2 years</label><br> <label><input type="radio" name="duration"> Less than 2.5 years</label><br> <label><input type="radio" name="duration"> Less than 3 years</label><br> <label><input type="radio" name="duration"> More than 3 years</label><br> <label><input type="radio" name="duration"> I do not live in Germany</label><br></p>
+</form>
+<p>
+</p></li>
+</ol>
+<p><strong>Telegram Chat-Bot</strong>. To automate data collection, we developed a custom Telegram bot that:</p>
 <ul>
-<li>We identified <strong>100+ active Telegram groups</strong> where refugees communicated.</li>
-<li>Contacted group admins to <strong>obtain permission</strong> for posting survey polls.</li>
-<li>Ensured that the survey was <strong>pinned or highlighted</strong> for better visibility.</li>
+<li>Recorded the poll state after each anonymous response</li>
+<li>Logged timestamps to later link responses across multiple polls</li>
 </ul>
-</section>
-<section id="survey-deployment-strategy" class="level3">
-<h3 class="anchored" data-anchor-id="survey-deployment-strategy">Survey Deployment Strategy</h3>
-<ul>
-<li>Instead of a single poll, we used <strong>a sequence of polls</strong> to cover different aspects (e.g., demographics, employment, housing).</li>
-<li>Polls were posted at <strong>optimal times</strong> to maximize engagement.</li>
-<li>The chat-bot collected <strong>timestamps for every vote</strong>, allowing us to later <strong>link responses across multiple polls</strong>.</li>
-</ul>
+<p>See the 🛠 <a href="./code.html">Code</a> section for more details.</p>
 <hr>
 </section>
-</section>
-<section id="innovative-solutions" class="level2">
-<h2 class="anchored" data-anchor-id="innovative-solutions">💡 3. Innovative Solutions</h2>
-<p>One of the key innovations in our survey was the ability to <strong>link responses across multiple anonymous polls in a single channel</strong>.</p>
-<section id="timestamp-based-poll-linking" class="level3">
-<h3 class="anchored" data-anchor-id="timestamp-based-poll-linking">Timestamp-Based Poll Linking</h3>
-<ul>
-<li>Telegram <strong>anonymous polls</strong> do not track user identities.</li>
-<li>By <strong>logging timestamps</strong> for each vote, we could <strong>reconstruct response patterns</strong> across different questions.</li>
-<li>This method preserved <strong>anonymity</strong> while allowing us to analyze <strong>correlations between responses</strong>.</li>
-</ul>
-</section>
-<section id="data-validation-quality-control" class="level3">
-<h3 class="anchored" data-anchor-id="data-validation-quality-control">Data Validation &amp; Quality Control</h3>
-<p>To ensure data quality, we: - <strong>Filtered out duplicate votes</strong> (if a user tried to vote multiple times in the same poll). - Identified <strong>suspicious response patterns</strong> (e.g., sudden surges of votes in specific cities). - Compared data with <strong>external refugee statistics</strong> for consistency.</p>
-<hr>
-</section>
-</section>
-<section id="data-processing-visualization" class="level2">
-<h2 class="anchored" data-anchor-id="data-processing-visualization">📊 4. Data Processing &amp; Visualization</h2>
-<p>Once the survey responses were collected, we processed and visualized the data using <strong>Python</strong>.</p>
-<section id="data-cleaning-organization" class="level3">
-<h3 class="anchored" data-anchor-id="data-cleaning-organization">Data Cleaning &amp; Organization</h3>
-<ul>
-<li><strong>Pandas</strong> was used for handling and cleaning the dataset.</li>
-<li>Removed incomplete or inconsistent responses.</li>
-<li>Merged different poll responses using <strong>timestamp synchronization</strong>.</li>
-</ul>
-</section>
-<section id="statistical-analysis-graphs" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-analysis-graphs">Statistical Analysis &amp; Graphs</h3>
-<ul>
-<li><strong>Matplotlib</strong> and <strong>Seaborn</strong> were used for visualizing response distributions.</li>
-<li><strong>Folium (Leaflet.js)</strong> was used to create an <strong>interactive refugee response map</strong>.</li>
-</ul>
-</section>
-<section id="interactive-mapping" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-mapping">Interactive Mapping</h3>
-<ul>
-<li>We mapped responses by <strong>city</strong> to show geographical trends.</li>
-<li>Users can <strong>click on cities</strong> to view Telegram group links and survey insights.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="ethical-considerations-anonymity" class="level2">
-<h2 class="anchored" data-anchor-id="ethical-considerations-anonymity">📜 5. Ethical Considerations &amp; Anonymity</h2>
-<p>Given the sensitivity of refugee data, we adhered to strict <strong>ethical guidelines</strong>.</p>
-<section id="anonymity-measures" class="level3">
-<h3 class="anchored" data-anchor-id="anonymity-measures">Anonymity Measures</h3>
-<ul>
-<li>No personally identifiable information (PII) was collected.</li>
-<li>Timestamp-based response linking was done <strong>without exposing individual identities</strong>.</li>
-<li>All data was stored <strong>securely and only used for research purposes</strong>.</li>
-</ul>
-</section>
-<section id="transparency-open-source-approach" class="level3">
-<h3 class="anchored" data-anchor-id="transparency-open-source-approach">Transparency &amp; Open-Source Approach</h3>
-<ul>
-<li>The survey methodology and analysis code are publicly available.</li>
-<li>We encourage researchers to <strong>review our code</strong> and <strong>replicate the study</strong>.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps">📎 Next Steps</h2>
-<ul>
-<li>📊 <a href="./results.html">View Survey Results</a></li>
-<li>🌍 <a href="./map.html">Explore the Survey Geography</a></li>
-<li>🛠 <a href="./code.html">Check the Code</a></li>
-</ul>
+<section id="organizational-phase" class="level3">
+<h3 class="anchored" data-anchor-id="organizational-phase">🔄 2. Organizational Phase</h3>
+<!--
+
+### Collaboration with Chat Administrators
+- We identified **100+ active Telegram groups** where refugees communicated.
+- Contacted group admins to **obtain permission** for posting survey polls.
+- Ensured that the survey was **pinned or highlighted** for better visibility.
+
+### Survey Deployment Strategy
+- Instead of a single poll, we used **a sequence of polls** to cover different aspects (e.g., demographics, employment, housing).
+- Polls were posted at **optimal times** to maximize engagement.
+- The chat-bot collected **timestamps for every vote**, allowing us to later **link responses across multiple polls**.
+
+---
+
+## 💡 3. Innovative Solutions
+
+One of the key innovations in our survey was the ability to **link responses across multiple anonymous polls in a single channel**.
+
+### Timestamp-Based Poll Linking
+- Telegram **anonymous polls** do not track user identities.
+- By **logging timestamps** for each vote, we could **reconstruct response patterns** across different questions.
+- This method preserved **anonymity** while allowing us to analyze **correlations between responses**.
+
+### Data Validation & Quality Control
+To ensure data quality, we:
+- **Filtered out duplicate votes** (if a user tried to vote multiple times in the same poll).
+- Identified **suspicious response patterns** (e.g., sudden surges of votes in specific cities).
+- Compared data with **external refugee statistics** for consistency.
+
+---
+
+## 📊 4. Data Processing & Visualization
+
+Once the survey responses were collected, we processed and visualized the data using **Python**.
+
+### Data Cleaning & Organization
+- **Pandas** was used for handling and cleaning the dataset.
+- Removed incomplete or inconsistent responses.
+- Merged different poll responses using **timestamp synchronization**.
+
+### Statistical Analysis & Graphs
+- **Matplotlib** and **Seaborn** were used for visualizing response distributions.
+- **Folium (Leaflet.js)** was used to create an **interactive refugee response map**.
+
+### Interactive Mapping
+- We mapped responses by **city** to show geographical trends.
+- Users can **click on cities** to view Telegram group links and survey insights.
+
+---
+
+## 📜 5. Ethical Considerations & Anonymity
+
+Given the sensitivity of refugee data, we adhered to strict **ethical guidelines**.
+
+### Anonymity Measures
+- No personally identifiable information (PII) was collected.
+- Timestamp-based response linking was done **without exposing individual identities**.
+- All data was stored **securely and only used for research purposes**.
+
+### Transparency & Open-Source Approach
+- The survey methodology and analysis code are publicly available.
+- We encourage researchers to **review our code** and **replicate the study**.
+
+---
+
+## 📎 Next Steps
+
+- 📊 [View Survey Results](results.qmd)
+- 🌍 [Explore the Survey Geography](map.qmd)
+- 🛠 [Check the Code](code.qmd)
+
+-->
 
 
 </section>
