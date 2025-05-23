@@ -1,9 +1,34 @@
 ---
-title: "Results"
+title: "📈 Results"
 format: html
-
 ---
 
-This is an example of text
+![Dependence of problems on respondents’ age](figures/problem_age/age_problem_bar_de.png){ width=600 }
 
-Here is my test text
+![Degree of association across responses measured by Cohen’s kappa](figures/problem_general/correlation.png){ width=600 }
+
+
+::: {.panel-tabset group="language"}
+
+## Deutsch lernen
+
+![](figures/problem_chat/Deutsch_lernen.png){ width=600 }
+
+## Bürokratie
+
+![](figures/problem_chat/Bürokratie.png){ width=600 }
+
+## Wohnprobleme
+
+![](figures/problem_chat/Wohnprobleme.png){ width=600 }
+
+## PsychProbleme
+
+![](figures/problem_chat/Psychologische_Probleme.png){ width=600 }
+
+## Kinderintegration
+
+![](figures/problem_chat/Integration_von_Kindern.png){ width=600 }
+
+
+:::

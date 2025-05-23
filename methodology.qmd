@@ -1,45 +1,84 @@
 ---
 title: "📝 Methodology"
-format: html
 ---
 
-This page explains the methodology behind our opinion poll, outlining the key phases of the project, from preparation to data processing and visualization. Unlike conventional polls, our methodology is more prone to biases—particularly **coverage** and **nonresponse biases**—which are difficult to quantify precisely. However, we will discuss their potential impact later on this page.
+This page explains the methodology behind our opinion poll, outlining the key phases of the project—from preparation to data processing and visualization.  
+Unlike conventional polls, our methodology may have [**coverage bias**](https://en.wikipedia.org/wiki/Opinion_poll#Coverage_bias) and [**nonresponse bias**](https://en.wikipedia.org/wiki/Participation_bias), which are difficult to quantify precisely. Although our results, where comparable, match those from official agencies quite well, extrapolating them to the overall population is at your own risk of erroneous conclusions.
 
+
+### 📌 1. Preparation
+
+At the preparation step we have analyzed the existing surveys of similar kind, decided on survey format, developed the bot which automatically collects the current results each time a new vote appears, and tested our ideas with a small scope sureveys.
+
+**Research on existing surveys**.
+We reviewed past surveys on Ukrainian refugees, particularly those related to Germany, to identify their intersection with our intended questionnaire. Our goal was to align demographic questions, such as age categories, with those used in other surveys to facilitate easier comparisons.
+
+**Selecting the opinion poll format**.
+Our primary focus was to explore the potential impact of our efforts. Given the small size of our core team, choosing Telegram channels dedicated to assisting Ukrainian refugees was a natural decision.  
+
+To maximize participation, we kept the poll *simple* and *anonymous*. Simplicity ensured that participants could respond directly within the Telegram channels they were already part of, rather than through a separate bot-led channel or external forms (e.g., Google Forms). Anonymity allowed those who preferred to keep their privacy to participate freely.  
+
+To achieve this, we used anonymous multi- and single-choice Telegram polls. Telegram allows maximum 10 choice options per poll. We ended up with the following three polls to maximally use this limit and to not owerwhelm responers with the number of polls.
+
+1. Multiple choice poll: What problems related to moving and adapting to life in Germany are currently most important to you?
+
+    <form>
+    <label><input type="checkbox" name="main_issues"> Learning German</label><br>
+    <label><input type="checkbox" name="main_issues"> Employment</label><br>
+    <label><input type="checkbox" name="main_issues"> Bureaucratic procedures</label><br>
+    <label><input type="checkbox" name="main_issues"> Professional education, retraining</label><br>
+    <label><input type="checkbox" name="main_issues"> Housing, household setup</label><br>
+    <label><input type="checkbox" name="main_issues"> Medicine</label><br>
+    <label><input type="checkbox" name="main_issues"> Psychological problems</label><br>
+    <label><input type="checkbox" name="main_issues"> Loneliness</label><br>
+    <label><input type="checkbox" name="main_issues"> Adaptation and integration of children</label><br>
+    <label><input type="checkbox" name="main_issues"> Other options (including no critical problems related to moving to Germany)</label><br>
+    </form>
+    <p></p>
+
+2. Single choice poll.
+
+    <form>
+    <label><input type="radio" name="gender_age"> I am a woman, aged 18 to 29</label><br>
+    <label><input type="radio" name="gender_age"> I am a woman, aged 30 to 39</label><br>
+    <label><input type="radio" name="gender_age"> I am a woman, aged 40 to 49</label><br>
+    <label><input type="radio" name="gender_age"> I am a woman, aged 50 to 59</label><br>
+    <label><input type="radio" name="gender_age"> I am a woman, older than 60</label><br>
+    <label><input type="radio" name="gender_age"> I am a man, aged 18 to 29</label><br>
+    <label><input type="radio" name="gender_age"> I am a man, aged 30 to 39</label><br>
+    <label><input type="radio" name="gender_age"> I am a man, aged 40 to 49</label><br>
+    <label><input type="radio" name="gender_age"> I am a man, aged 50 to 59</label><br>
+    <label><input type="radio" name="gender_age"> I am a man, older than 60</label><br>
+    </form>
+    <p></p>
+
+3. Single choice poll: How long have you been staying in Germany?
+
+    <form>
+    <label><input type="radio" name="duration"> Less than half a year</label><br>
+    <label><input type="radio" name="duration"> Less than 1 year</label><br>
+    <label><input type="radio" name="duration"> Less than 1.5 years</label><br>
+    <label><input type="radio" name="duration"> Less than 2 years</label><br>
+    <label><input type="radio" name="duration"> Less than 2.5 years</label><br>
+    <label><input type="radio" name="duration"> Less than 3 years</label><br>
+    <label><input type="radio" name="duration"> More than 3 years</label><br>
+    <label><input type="radio" name="duration"> I do not live in Germany</label><br>
+    </form>
+    <p></p>
+
+**Telegram Chat-Bot**.
+To automate data collection, we developed a custom Telegram bot that:
+
+- Recorded the poll state after each anonymous response
+- Logged timestamps to later link responses across multiple polls
+
+See the 🛠 [Code](code.qmd) section for more details.
 
 ---
 
-## 📌 1. Preparation phase
+### 🔄 2. Organizational Phase
 
-Before launching the survey, we conducted an extensive research and design phase.
-
-### Research on existing surveys
-We reviewed past surveys and studies on Ukrainian refugees, particularly those related to Germany, to identify their intersection with our intended questionnaire. Our goal was to align demographic questions, such as age categories, with those used in other surveys to facilitate easier comparisons.
-
-### Selecting the opinion poll format
-Our primary focus as a group of volunteers was to explore the potential impact of our efforts. Given the small size of our core team, choosing Telegram channels dedicated to assisting Ukrainian refugees was a natural decision.  
-
-To maximize participation, we kept the poll **simple** and **anonymous**. Simplicity ensured that participants could respond directly within the Telegram channels they were already part of, rather than through a separate bot-led channel or external forms (e.g., Google Forms). Anonymity allowed those who preferred to keep their privacy to participate freely.  
-
-To achieve this, we used **anonymous multi- and single-choice Telegram polls**.
-
-
-### Development of a Telegram Chat-Bot
-To automate data collection, we developed a custom Telegram bot that allowed to create :
-- Recorded every **anonymous poll response**.
-- Logged **timestamps** to later connect responses across multiple polls.
-- Stored data securely for post-processing.
-
-### Testing the bot in pilot groups
-Before launching at scale, we:
-- Tested the bot in **several Telegram groups** to ensure proper data capture.
-- Refined timestamp synchronization to allow for **multi-poll analysis**.
-- Validated that anonymity was preserved while collecting meaningful insights.
-
----
-
-## 🛠 2. Organizational Phase
-
-To reach as many Ukrainian refugees as possible, we worked with **volunteer Telegram channels**.
+<!--
 
 ### Collaboration with Chat Administrators
 - We identified **100+ active Telegram groups** where refugees communicated.
@@ -110,3 +149,4 @@ Given the sensitivity of refugee data, we adhered to strict **ethical guidelines
 - 🌍 [Explore the Survey Geography](map.qmd)
 - 🛠 [Check the Code](code.qmd)
 
+-->

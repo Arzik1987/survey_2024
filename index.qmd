@@ -8,9 +8,9 @@ Welcome to the official survey report on Ukrainian refugees in Germany. This stu
 
 This report explains our methodology, including the main innovation: the use of a custom Telegram bot to automate the consolidation of poll results and the matching of response times, enabling us to combine answers from different polls (e.g., the "problems" and "demographics" polls) while preserving respondent anonymity. We also share key parts of the code, allowing others to run similar surveys. We chose not to make the raw data public, as it could be misused in manipulative analyses.
 
-- 📖 [Methodology of the survey](methodology.qmd)
+- 📝 [Methodology of the survey](methodology.qmd)
 
-- 📊 [Results](results.qmd)
+- 📈 [Results](results.qmd)
 
 - 🌍 [Survey geography](map.qmd)
 
