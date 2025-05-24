@@ -5,6 +5,7 @@ title: "📝 Methodology"
 This page explains the methodology behind our opinion poll, outlining the key phases of the project—from preparation to data processing and visualization.  
 Unlike conventional polls, our methodology may have [**coverage bias**](https://en.wikipedia.org/wiki/Opinion_poll#Coverage_bias) and [**nonresponse bias**](https://en.wikipedia.org/wiki/Participation_bias), which are difficult to quantify precisely. Although our results, where comparable, match those from official agencies quite well, extrapolating them to the overall population is at your own risk of erroneous conclusions.
 
+---
 
 ### 📌 1. Preparation
 
@@ -78,75 +79,65 @@ See the 🛠 [Code](code.qmd) section for more details.
 
 ### 🔄 2. Organizational Phase
 
+We reviewed the list of Telegram groups from the [UAhelp Wiki](https://uahelp.wiki/german-city-chats), filtering out those with a purely commercial focus or that were no longer active. We then contacted their administrators to obtain permission to post our survey polls. This resulted in 100+ groups from over 80 locations, including several all-German channels that are thematic rather than location-based.
+
+Due to limited capacity to manage multiple polls simultaneously, we conducted them in "waves", targeting around a dozen channels at a time during the period from *November 2024* to *January 2025*. Group administrators were encouraged to choose posting times that would maximize participation, though our organizational capacity remained the main limiting factor.
+
+Some chats received only two of the three polls—the one about problems and one additional, either demographic or about duration of stay. In general, we discouraged reposting polls across multiple channels, as this makes later disaggregation impossible. Our bot collects events separately for each poll.
+
+
+---
+
+### 💡 3. Our Innovation: Merging Polls for Deeper Insight
+
+At the time of data collection, Telegram limited poll complexity: a maximum of 10 options per poll and no support for linked or connected polls. In addition, to preserve respondent privacy, we used anonymous polls, which excluded the possibility of linking responses from the same user across different polls via their internal Telegram ID.
+
+We also observed that auxiliary polls about demographics or duration of stay received 30–60% more responses than the main poll about problems. Possible reasons include group members' curiosity about these characteristics, and the fact that single-choice polls record a response immediately after selection. In contrast, multiple-choice polls—such as our problems poll—require clicking the "Vote" button after making selections, which some respondents may have forgotten to do.
+
+All of the above makes complex analysis—such as identifying the distribution of problems by specific age groups and/or gender—impossible.
+
+Our solution to this problem is *intelligent response-time matching*. The idea is that when multiple polls appear together in a Telegram group, respondents tend to answer them within a short time interval. For instance, if responses to two polls occur less than 15 seconds apart—while being separated from other answers in each poll by more than a minute—we can reasonably assume that this pair of responses belongs to the same participant.
+
+The custom chatbot records individual answer events along with precise timestamps, making this matching strategy feasible, as illustrated in the following figure.
+
+![Merging responses from two polls (purple and orange) posted in the same chat, based on the timing of answer collection. The top two rows show response events before merging; the bottom two rows show the remaining events after merging.](figures/methodology/ts_alignment.jpg){width=600px}
+
+Using this algorithm, we successfully merged around 50% of the responses from the main poll about problems with corresponding demographic or stay duration answers. This enabled a deeper analysis of the data—for example, examining how reported problems vary depending on the duration of stay.
+
+---
+
+### 📊 4. Data Processing & Visualization
+
+The raw poll results are stored in .json files. This approach does not enforce a strict schema, allowing us to randomize the sequence of options in the problems poll and customize the language of questions according to group administrators’ preferences.
+
+Subsequent processing was performed in Python and included:
+
+- Loading all .json files
+- Unifying answer options by translating them into a common language, correcting typos if present, and ordering them consistently
+- Merging poll data from all Telegram groups and enriching it with group metadata and geographical information
+- Applying the intelligent response-time matching described above when necessary
+- Visualizing the results in static plots and on an interactive map
+
+See the 🛠 [Code](code.qmd) section for more details, the 📊 [Results](results.qmd) section for static plots, and the 🌍 [Map](map.qmd) to explore the survey geography.
+
+---
+
+### 📜 5. Ethical Considerations & Anonymity
+
+Given the sensitivity of the data, we followed these key guidelines:
+
+- No personally identifiable information (PII) was collected through the polls.
+- Response linking based on timestamps was conducted without individual identities.
+- All data was stored locally and used solely for research purposes.
+- The full survey methodology and the main analysis code are publicly available.
+
+
 <!--
 
-### Collaboration with Chat Administrators
-- We identified **100+ active Telegram groups** where refugees communicated.
-- Contacted group admins to **obtain permission** for posting survey polls.
-- Ensured that the survey was **pinned or highlighted** for better visibility.
-
-### Survey Deployment Strategy
-- Instead of a single poll, we used **a sequence of polls** to cover different aspects (e.g., demographics, employment, housing).
-- Polls were posted at **optimal times** to maximize engagement.
-- The chat-bot collected **timestamps for every vote**, allowing us to later **link responses across multiple polls**.
-
----
-
-## 💡 3. Innovative Solutions
-
-One of the key innovations in our survey was the ability to **link responses across multiple anonymous polls in a single channel**.
-
-### Timestamp-Based Poll Linking
-- Telegram **anonymous polls** do not track user identities.
-- By **logging timestamps** for each vote, we could **reconstruct response patterns** across different questions.
-- This method preserved **anonymity** while allowing us to analyze **correlations between responses**.
-
-### Data Validation & Quality Control
-To ensure data quality, we:
-- **Filtered out duplicate votes** (if a user tried to vote multiple times in the same poll).
-- Identified **suspicious response patterns** (e.g., sudden surges of votes in specific cities).
-- Compared data with **external refugee statistics** for consistency.
-
----
-
-## 📊 4. Data Processing & Visualization
-
-Once the survey responses were collected, we processed and visualized the data using **Python**.
-
-### Data Cleaning & Organization
-- **Pandas** was used for handling and cleaning the dataset.
-- Removed incomplete or inconsistent responses.
-- Merged different poll responses using **timestamp synchronization**.
-
-### Statistical Analysis & Graphs
-- **Matplotlib** and **Seaborn** were used for visualizing response distributions.
-- **Folium (Leaflet.js)** was used to create an **interactive refugee response map**.
-
-### Interactive Mapping
-- We mapped responses by **city** to show geographical trends.
-- Users can **click on cities** to view Telegram group links and survey insights.
-
----
-
-## 📜 5. Ethical Considerations & Anonymity
-
-Given the sensitivity of refugee data, we adhered to strict **ethical guidelines**.
-
-### Anonymity Measures
-- No personally identifiable information (PII) was collected.
-- Timestamp-based response linking was done **without exposing individual identities**.
-- All data was stored **securely and only used for research purposes**.
-
-### Transparency & Open-Source Approach
-- The survey methodology and analysis code are publicly available.
-- We encourage researchers to **review our code** and **replicate the study**.
-
----
-
-## 📎 Next Steps
+### 📎 Next Steps
 
 - 📊 [View Survey Results](results.qmd)
 - 🌍 [Explore the Survey Geography](map.qmd)
 - 🛠 [Check the Code](code.qmd)
-
 -->
+
